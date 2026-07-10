@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://biopedia.github.io/biopedia/</loc></url>
-  <url><loc>https://biopedia.github.io/biopedia/about.html</loc></url>
-  <url><loc>https://biopedia.github.io/biopedia/privacy.html</loc></url>
-  <url><loc>https://biopedia.github.io/biopedia/subject.html?id=biochemistry</loc></url>
-  <url><loc>https://biopedia.github.io/biopedia/subject.html?id=molecular-biology-genetics</loc></url>
-  <url><loc>https://biopedia.github.io/biopedia/subject.html?id=cell-biology-signaling</loc></url>
-  <url><loc>https://biopedia.github.io/biopedia/subject.html?id=botany</loc></url>
-  <url><loc>https://biopedia.github.io/biopedia/subject.html?id=zoology</loc></url>
-  <url><loc>https://biopedia.github.io/biopedia/subject.html?id=ecology</loc></url>
-  <url><loc>https://biopedia.github.io/biopedia/subject.html?id=evolution</loc></url>
-  <url><loc>https://biopedia.github.io/biopedia/subject.html?id=developmental-biology</loc></url>
-  <url><loc>https://biopedia.github.io/biopedia/subject.html?id=biotechnology</loc></url>
+  <url><loc>https://biopedia.github.io/</loc></url>
+  <url><loc>https://biopedia.github.io/about.html</loc></url>
+  <url><loc>https://biopedia.github.io/privacy.html</loc></url>
+  <url><loc>https://biopedia.github.io/subject.html?id=biochemistry</loc></url>
+  <url><loc>https://biopedia.github.io/subject.html?id=molecular-biology-genetics</loc></url>
+  <url><loc>https://biopedia.github.io/subject.html?id=cell-biology-signaling</loc></url>
+  <url><loc>https://biopedia.github.io/subject.html?id=botany</loc></url>
+  <url><loc>https://biopedia.github.io/subject.html?id=zoology</loc></url>
+  <url><loc>https://biopedia.github.io/subject.html?id=ecology</loc></url>
+  <url><loc>https://biopedia.github.io/subject.html?id=evolution</loc></url>
+  <url><loc>https://biopedia.github.io/subject.html?id=developmental-biology</loc></url>
+  <url><loc>https://biopedia.github.io/subject.html?id=biotechnology</loc></url>
 </urlset>
