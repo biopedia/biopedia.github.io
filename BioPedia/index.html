@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BioPedia — The Free Encyclopedia of Life Sciences</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🧬</text></svg>">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+  <div class="nav-wrap">
+    <a href="index.html" class="logo">BioPedia</a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="#subjects">Subjects</a></li>
+      <li><a href="about.html">About</a></li>
+    </ul>
+    <div style="display:flex; gap:10px;">
+      <button class="theme-btn" id="themeBtn">🌙</button>
+      <button class="menu-btn" id="menuBtn">☰</button>
+    </div>
+  </div>
+</header>
+
+<section class="hero">
+<h1>Explore the <span>Life Sciences</span></h1>  <p>BioPedia is a free, open encyclopedia covering every branch of life sciences — from basic theory to research-level knowledge.</p>
+  <div class="search-box">
+    <input type="text" id="searchInput" placeholder="Search a subject or topic...">
+    <button>Search</button>
+  </div>
+</section>
+
+<section class="section" id="subjects">
+  <h2 class="section-title">Browse Subjects</h2>
+  <p class="section-sub">Click any subject to explore its topics, theory and diagrams.</p>
+  <div class="grid" id="subjectGrid"></div>
+</section>
+
+<footer>
+  BioPedia — Free & open for everyone. Built for learners, by learners.
+  <br><br>
+  <a href="privacy.html" style="color:var(--primary); font-weight:600;">Privacy Policy</a>
+</footer>
+
+<script src="js/data.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

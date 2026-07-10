@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Privacy Policy — BioPedia</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🧬</text></svg>">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+  <div class="nav-wrap">
+    <a href="index.html" class="logo">BioPedia</a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="index.html#subjects">Subjects</a></li>
+      <li><a href="about.html">About</a></li>
+    </ul>
+    <div style="display:flex; gap:10px;">
+      <button class="theme-btn" id="themeBtn">🌙</button>
+      <button class="menu-btn" id="menuBtn">☰</button>
+    </div>
+  </div>
+</header>
+
+<section class="hero" style="padding-bottom:20px;">
+  <h1>Privacy <span>Policy</span></h1>
+  <p>Last updated: July 2026</p>
+</section>
+
+<div class="section" style="max-width:800px;">
+
+  <div class="topic">
+    <h2>Introduction</h2>
+    <ul class="theory-points">
+      <li>This Privacy Policy explains how BioPedia ("we", "our", "us") collects, uses, and protects information when you visit our website.</li>
+      <li>By using BioPedia, you agree to the practices described in this policy.</li>
+    </ul>
+  </div>
+
+  <div class="topic">
+    <h2>Information We Collect</h2>
+    <ul class="theory-points">
+      <li>BioPedia does not require account creation or personal sign-up to access content.</li>
+      <li>We may automatically collect non-personal technical data such as browser type, device type, and pages visited, through standard analytics tools, to help us understand and improve the site.</li>
+      <li>We do not knowingly collect personal information from children under 13.</li>
+    </ul>
+  </div>
+
+  <div class="topic">
+    <h2>Cookies</h2>
+    <ul class="theory-points">
+      <li>BioPedia may use cookies to remember your theme preference (light/dark mode) and to support site functionality.</li>
+      <li>If advertising is enabled on this site (e.g. Google AdSense), our advertising partners may use cookies to show relevant ads based on your visits to this and other websites.</li>
+      <li>You can disable cookies through your browser settings at any time, though some site features may not work as intended.</li>
+    </ul>
+  </div>
+
+  <div class="topic">
+    <h2>Third-Party Advertising</h2>
+    <ul class="theory-points">
+      <li>BioPedia may display advertisements served by third-party providers such as Google AdSense.</li>
+      <li>These providers may use cookies and similar technologies to serve ads based on your prior visits to this and other websites.</li>
+      <li>You may opt out of personalized advertising by visiting Google's Ads Settings at <a href="https://adssettings.google.com" target="_blank" style="color:var(--primary); font-weight:600;">adssettings.google.com</a>.</li>
+    </ul>
+  </div>
+
+  <div class="topic">
+    <h2>Third-Party Links</h2>
+    <ul class="theory-points">
+      <li>Our site may contain links to external websites for reference or educational purposes.</li>
+      <li>We are not responsible for the privacy practices or content of these external sites.</li>
+    </ul>
+  </div>
+
+  <div class="topic">
+    <h2>Changes to This Policy</h2>
+    <ul class="theory-points">
+      <li>We may update this Privacy Policy from time to time to reflect changes in our practices or for legal reasons.</li>
+      <li>Any changes will be posted on this page with an updated revision date.</li>
+    </ul>
+  </div>
+
+  <div class="topic">
+    <h2>Contact Us</h2>
+    <ul class="theory-points">
+      <li>If you have questions about this Privacy Policy, please reach out through our contact details listed on the About page.</li>
+    </ul>
+  </div>
+
+</div>
+
+<a href="index.html" class="back-link">← Back to home</a>
+
+<footer>
+  BioPedia — Free & open for everyone. Built for learners, by learners.
+</footer>
+
+<script>
+document.documentElement.setAttribute("data-theme", localStorage.getItem("theme") || "light");
+const themeBtn = document.getElementById("themeBtn");
+themeBtn.textContent = document.documentElement.getAttribute("data-theme") === "dark" ? "☀️" : "🌙";
+themeBtn.addEventListener("click", () => {
+  const current = document.documentElement.getAttribute("data-theme");
+  const next = current === "dark" ? "light" : "dark";
+  document.documentElement.setAttribute("data-theme", next);
+  themeBtn.textContent = next === "dark" ? "☀️" : "🌙";
+  localStorage.setItem("theme", next);
+});
+document.getElementById("menuBtn").addEventListener("click", () => {
+  document.getElementById("navLinks").classList.toggle("open");
+});
+</script>
+</body>
+</html>

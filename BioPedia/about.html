@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About — BioPedia</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🧬</text></svg>">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+  <div class="nav-wrap">
+    <a href="index.html" class="logo">BioPedia</a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="index.html#subjects">Subjects</a></li>
+      <li><a href="about.html">About</a></li>
+    </ul>
+    <div style="display:flex; gap:10px;">
+      <button class="theme-btn" id="themeBtn">🌙</button>
+      <button class="menu-btn" id="menuBtn">☰</button>
+    </div>
+  </div>
+</header>
+
+<section class="hero" style="padding-bottom:20px;">
+  <h1>About <span>BioPedia</span></h1>
+  <p>Free knowledge, for every learner, everywhere.</p>
+</section>
+
+<div class="section" style="max-width:800px;">
+
+  <div class="topic">
+    <h2>Our Mission</h2>
+    <ul class="theory-points">
+      <li>BioPedia exists to make life sciences education free, clear, and accessible to everyone — regardless of location, background, or financial means.</li>
+      <li>Whether you're a school student, a college researcher, or simply a curious mind, BioPedia aims to be your go-to reference for biology.</li>
+      <li>We cover every major branch of life sciences, from foundational basics to research-level concepts.</li>
+    </ul>
+  </div>
+
+  <div class="topic">
+    <h2>What You'll Find Here</h2>
+    <ul class="theory-points">
+      <li>Clear, point-wise theory covering Biochemistry, Molecular Biology & Genetics, Cell Biology & Signaling, Botany, Zoology, Ecology, Evolution, Developmental Biology, and Biotechnology.</li>
+      <li>Diagrams and visuals to make complex concepts easier to understand.</li>
+      <li>A clean, distraction-free reading experience with light and dark mode.</li>
+      <li>Constantly growing content — new topics and subjects are added regularly.</li>
+    </ul>
+  </div>
+
+  <div class="topic">
+    <h2>Why It's Free</h2>
+    <ul class="theory-points">
+      <li>We believe quality science education shouldn't be locked behind paywalls.</li>
+      <li>BioPedia will always remain free to read, for students and lifelong learners alike.</li>
+      <li>The site is supported through minimal, unobtrusive advertising — never through fees to our readers.</li>
+    </ul>
+  </div>
+
+  <div class="topic">
+    <h2>Get in Touch</h2>
+    <ul class="theory-points">
+      <li>Found an error, or have a suggestion? We'd love to hear from you.</li>
+      <li>BioPedia is a growing project, and reader feedback directly shapes what we build next.</li>
+    </ul>
+  </div>
+
+</div>
+
+<a href="index.html" class="back-link">← Back to home</a>
+
+<footer>
+  BioPedia — Free & open for everyone. Built for learners, by learners.
+  <br><br>
+  <a href="privacy.html" style="color:var(--primary); font-weight:600;">Privacy Policy</a>
+</footer>
+
+<script>
+document.documentElement.setAttribute("data-theme", localStorage.getItem("theme") || "light");
+const themeBtn = document.getElementById("themeBtn");
+themeBtn.textContent = document.documentElement.getAttribute("data-theme") === "dark" ? "☀️" : "🌙";
+themeBtn.addEventListener("click", () => {
+  const current = document.documentElement.getAttribute("data-theme");
+  const next = current === "dark" ? "light" : "dark";
+  document.documentElement.setAttribute("data-theme", next);
+  themeBtn.textContent = next === "dark" ? "☀️" : "🌙";
+  localStorage.setItem("theme", next);
+});
+document.getElementById("menuBtn").addEventListener("click", () => {
+  document.getElementById("navLinks").classList.toggle("open");
+});
+</script>
+</body>
+</html>
