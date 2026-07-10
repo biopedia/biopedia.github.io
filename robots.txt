@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://biopedia.github.io/biopedia/sitemap.xml
+Sitemap: https://biopedia.github.io/sitemap.xml
